@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz App</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- <nav class="navbar">
+        <div>preCODES</div>
+        <ul>
+            <li>home</li>
+            <li>menu</li>
+        </ul>
+    </nav> -->
+
+    <section id="main-div">
+        <div id="left">
+            <img src="images/hero.jpg" alt="">
+        </div>
+        <div id="right">
+            <div>
+                <h1>Welcome to the Quiz!</h1>
+
+                <label id="name"></i>Enter your Name</label>
+                <div class="input-icons">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" name="username" class="input-field" id="username">
+                </div>
+                <button class="btn-name" id="btn-name">Submit</button>
+
+                <div id="rules" style="display:none">
+                    <p>Rules & Instructions:</p>
+                    <ol>
+                        <li><span id="rules-username"></span>, there are 10 Questions on India and all are Compolsory.</li>
+                        <li>You will get 2 points on each Right Answer.</li>
+                        <li>One Point will be deducted if the Answer is Wrong.</li>
+                        <li>In MCQ based questions you have to type the Serial Number / Index Value.</li>
+                    </ol>
+                    <a id="link" href="quiz.html">Let's Start</a>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

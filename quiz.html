@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body id="quiz-body">
+
+    <section id="quiz-img">
+
+        <p>Question <span id="question-num">1</span> / 10 </p>
+
+        <section id="one-word-questions">
+            <div id="question-text">India's Largest City by Population:</div>
+            <input type="text" placeholder="Enter your answer" id="answer-text">
+            <button id="btn-submit" class="btn-question">Submit</button>
+        </section>
+
+        <section id="mcq-questions">
+
+            <p id="mcqQuestion">Which City is known as "Electronic City of India"?</p>
+
+            <label class="radio-btns">
+                <input type="radio" id="Mumbai" name="quizQuestions" value="Mumbai">
+                <span class="mcqLabel" for="Mumbai">Mumbai</span><br>
+            </label>
+            <label class="radio-btns">
+                <input type="radio" id="Hyderabad" name="quizQuestions" value="Hyderabad">
+                <span class="mcqLabel" for="Hyderabad">Hyderabad</span><br>
+            </label>
+            <label class="radio-btns">
+                <input type="radio" id="Guragon" name="quizQuestions" value="Guragon">
+                <span class="mcqLabel" for="Guragon">Guragon</span><br>
+            </label>
+            <label class="radio-btns">
+                <input type="radio" id="Bangalore" name="quizQuestions" value="Bangalore">
+                <span class="mcqLabel" for="Bangalore">Bangalore</span>
+            </label>
+
+            <button id="btn-mcq">Submit</button>
+        </section>
+
+
+        <div id="alert">
+            <i style=" color: #00497b;" class="fas fa-check-circle fa-2x icon"></i>
+            <div class="icon-text">
+                You are Right! <br> Your Score is <span id="score">0</span>
+            </div>
+        </div>
+
+        <div id="alert-wrong">
+            <i style=" color: #00497b;" class="fas fa-times-circle fa-2x icon"></i>
+            <div class="icon-text">
+                You are Wrong! <br> Your Score is <span id="score-wrong">0</span>
+            </div>
+        </div>
+
+        <div id="scores">
+            <!-- <i style=" color: #01b4b4;" class="fas fa-check-circle fa-2x icon"></i> -->
+            <i style=" color: #00497b;" class="fas fa-award fa-2x icon"></i>
+            <div class="icon-text">
+                Congratulations, your Total Score is <span id="final-score">0</span> <br> Thanks for Solving the Quiz!!
+            </div>
+        </div>
+
+    </section>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
